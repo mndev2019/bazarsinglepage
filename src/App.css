@@ -1,0 +1,110 @@
+.button-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #fff;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  transition: border-color 0.4s ease, transform 0.3s ease;
+}
+
+.button-icon:hover {
+  border-color: #0367be;
+}
+
+.icon {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%; /* Optional: Makes the icon circular */
+}
+
+.icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.cube {
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 20px;
+}
+
+.button-icon:hover .cube {
+  transform: rotateX(90deg);
+}
+
+.side {
+  position: absolute;
+  height: 40px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.front {
+  background: #222229;
+  color: #fff;
+  transform: translate3d(0, 0, 1em);
+}
+
+.top {
+  background: #0367be;
+  color: #fff;
+  transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+}
+
+footer {
+  border-top: none !important;
+}
+
+.btn-close {
+  background-color: white !important;
+  color: white !important;
+  position: absolute;
+  top: -6px;
+  right: 13px;
+}
+
+/* --- Responsive Media Queries --- */
+@media (max-width: 768px) {
+  .cube {
+    width: 150px;
+    height: 15px;
+  }
+
+  .side {
+    height: 30px;
+    width: 150px;
+    font-size: 0.7em;
+  }
+
+  .icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cube {
+    width: 120px;
+    height: 12px;
+  }
+
+  .side {
+    height: 25px;
+    width: 120px;
+    font-size: 0.6em;
+  }
+
+  .icon svg {
+    width: 18px;
+    height: 18px;
+  }
+}
