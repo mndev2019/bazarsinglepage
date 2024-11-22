@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { FaHome } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-
+import imagelgo from "../assets/happening.png"
 const Home = () => {
-    const navigate = useNavigate(); 
-   
+    const navigate = useNavigate();
+
 
     const handleHostClick = (role) => {
-        navigate("/contact" ,{state:role}); 
+        navigate("/contact", { state: role });
     };
     return (
         <div
@@ -18,10 +18,19 @@ const Home = () => {
                     "url('https://static.vecteezy.com/system/resources/previews/010/803/399/non_2x/background-with-colorful-shopping-bags-illustration-sale-and-discount-concept-vector.jpg')",
             }}
         >
-            <h1 className='text-center text-bold text-5xl pt-60 text-white'> Welcome to Happening Bazar</h1>
-            <div className="absolute inset-0 flex items-center justify-center gap-7">
+            <div className="absolute inset-0 flex  items-center justify-center gap-7">
 
-                <div className="button-icon" onClick={()=>handleHostClick("Host")}>
+                <div className="relative top-[-130px] ">
+                    <div className="flex justify-center">
+                        <img src={imagelgo} className='w-[250px]' alt="" />
+                    </div>
+                    <h1 className='text-center text-bold lg:text-5xl text-3xl text-white mb-10'> Welcome to Happening Bazar</h1>
+
+                </div>
+            </div>
+            <div className="absolute inset-0 flex  items-center justify-center gap-7">
+
+                <div className="button-icon" onClick={() => handleHostClick("Host")}>
                     <div className="icon">
                         <FaHome />
                     </div>
@@ -31,7 +40,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="button-icon" onClick={()=>handleHostClick("Guest")}>
+                <div className="button-icon" onClick={() => handleHostClick("Guest")}>
                     <div className="icon">
                         <FaUser />
                     </div>
