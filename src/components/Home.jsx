@@ -7,8 +7,11 @@ const Home = () => {
     const navigate = useNavigate();
 
 
-    const handleHostClick = (role) => {
-        navigate("/contact", { state: role });
+    const handleHostClick = () => {
+        navigate("/contact");
+    };
+    const handleGuestClick = () => {
+        navigate("/guest");
     };
     return (
         <div
@@ -30,7 +33,7 @@ const Home = () => {
             </div>
             <div className="absolute inset-0 flex  items-center justify-center gap-7">
 
-                <div className="button-icon" onClick={() => handleHostClick("Host")}>
+                <div className="button-icon" onClick={() => handleHostClick()}>
                     <div className="icon">
                         <FaHome />
                     </div>
@@ -40,7 +43,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="button-icon" onClick={() => handleHostClick("Guest")}>
+                <div className="button-icon" onClick={() => handleGuestClick()}>
                     <div className="icon">
                         <FaUser />
                     </div>
