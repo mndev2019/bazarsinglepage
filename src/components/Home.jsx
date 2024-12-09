@@ -8,7 +8,7 @@ const Home = () => {
 
 
     const handleHostClick = () => {
-        navigate("/contact");
+        navigate("/host");
     };
     const handleGuestClick = () => {
         navigate("/guest");
