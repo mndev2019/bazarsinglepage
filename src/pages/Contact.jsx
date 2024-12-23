@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+// import { FaEye, FaEyeSlash } from "react-icons/fa";
 import {
   CitySelect,
   CountrySelect,
@@ -110,8 +110,8 @@ const Contact = () => {
           Contact Us As Host
         </h2>
         <form className="space-y-6" onSubmit={handleSubmit} autoComplete="off">
-          <div className="grid lg:grid-cols-3 grid-cols-1 gap-2">
-            <div className="col-span-1">
+        <div className="row">
+            <div className="col-md-4 col-12 mt-2">
               <label className="block text-lg font-medium text-black">
                 Name <span className="text-danger">*</span>
               </label>
@@ -125,7 +125,7 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="col-span-1">
+            <div className="col-md-4 col-12 mt-2">
               <label className="block text-lg font-medium text-black">
                 Last Name <span className="text-danger">*</span>
               </label>
@@ -138,7 +138,7 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="col-span-1">
+            <div className="col-md-4 col-12 mt-2">
               <label className="block text-lg font-medium text-black">
                 Company Name  <span className="text-danger">*</span>
               </label>
@@ -151,7 +151,7 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="col-span-1">
+            <div className="col-md-4 col-12 mt-2">
               <label className="block text-lg font-medium text-black">Email <span className="text-danger">*</span></label>
               <input
                 type="email"
@@ -162,7 +162,7 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="col-span-1">
+            <div className="col-md-4 col-12 mt-2">
               <label className="block text-lg font-medium text-black">Phone <span className="text-danger">*</span></label>
               <input
                 type="tel"
@@ -177,7 +177,7 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="col-span-1">
+            <div className="col-md-4 col-12 mt-2">
               <label className="block text-lg font-medium text-black">GST Number <span className="text-danger">*</span></label>
               <input
                 type="text"
@@ -188,7 +188,7 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="col-span-1">
+            <div className="col-md-4 col-12 mt-2">
               <label className="block text-lg font-medium text-black">
                 Business Category <span className="text-danger">*</span>
               </label>
@@ -208,10 +208,10 @@ const Contact = () => {
                 ))}
               </select>
             </div>
-            <div className="col-span-3">
+            <div className="col-12 mt-2">
               <h3>Address <span className="text-danger">*</span></h3>
             </div>
-            <div className="col-span-1">
+            <div className="col-md-4 col-12 mt-2">
               <label className="block text-lg font-medium text-black">Country </label>
               <select
                 value={selectedCountry?.code || ""}
@@ -229,7 +229,7 @@ const Contact = () => {
                 ))}
               </select>
             </div>
-            <div className="col-span-1">
+            <div className="col-md-4 col-12 mt-2">
               <label className="block text-lg font-medium text-black">State</label>
               <StateSelect
                 countryid={101}
@@ -240,7 +240,7 @@ const Contact = () => {
                 placeHolder="Select State"
               />
             </div>
-            <div className="col-span-1">
+            <div className="col-md-4 col-12 mt-2">
               <label className="block text-lg font-medium text-black">City</label>
               <CitySelect
                 countryid={101}
@@ -251,7 +251,7 @@ const Contact = () => {
                 placeHolder="Select City"
               />
             </div>
-            <div className="col-span-1">
+            <div className="col-md-4 col-12 mt-2">
               <label className="block text-lg font-medium text-black">Pincode</label>
               <input
                 type="text"
@@ -262,7 +262,7 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="col-span-1">
+            <div className="col-md-4 col-12 mt-2">
               <label className="block text-lg font-medium text-black">
                 Address 1
               </label>
@@ -275,7 +275,7 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="col-span-1">
+            <div className="col-md-4 col-12 mt-2">
               <label className="block text-lg font-medium text-black">
                 Address 2
               </label>
@@ -288,7 +288,7 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="col-span-3">
+            <div className="col-12 mt-3">
               <button
                 type="submit"
                 className="bg-blue-600 text-white py-2 px-4 rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"

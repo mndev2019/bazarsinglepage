@@ -1,20 +1,16 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
-import Button from "react-bootstrap/Button";
+import  { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
 import {
     CitySelect,
-    CountrySelect,
+
     StateSelect,
 } from "react-country-state-city";
 import { countries } from "countries-list";
-import { useLocation, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import { BaseUrl } from "../BaseUrl";
 
 const Guest = () => {
-    const location = useLocation(); // Get location from the router
-    const role = location.state; // Access the state passed by navigate()
 
 
     const [state, setState] = useState("");
@@ -104,8 +100,8 @@ const Guest = () => {
                     Contact Us As Guest
                 </h2>
                 <form className="space-y-6" onSubmit={handleSubmit}>
-                    <div className="grid lg:grid-cols-3 grid-cols-1 gap-2">
-                        <div className="col-span-1">
+                    <div className="row">
+                        <div className="col-md-4 col-12 mt-2">
                             <label className="block text-lg font-medium text-black">
                                 Name <span className="text-danger">*</span>
                             </label>
@@ -118,7 +114,7 @@ const Guest = () => {
                                 required
                             />
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-md-4 col-12 mt-2">
                             <label className="block text-lg font-medium text-black">
                                 Last Name <span className="text-danger">*</span>
                             </label>
@@ -131,7 +127,7 @@ const Guest = () => {
                                 required
                             />
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-md-4 col-12 mt-2">
                             <label className="block text-lg font-medium text-black">Email <span className="text-danger">*</span></label>
                             <input
                                 type="email"
@@ -142,7 +138,7 @@ const Guest = () => {
                                 required
                             />
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-md-4 col-12 mt-2">
                             <label className="block text-lg font-medium text-black">Phone</label>
                             <input
                                 type="tel"
@@ -157,7 +153,7 @@ const Guest = () => {
                                 required
                             />
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-md-4 col-12 mt-2">
                             <label className="block text-lg font-medium text-black">
                                 Preferred Category <span className="text-danger">*</span>
                             </label>
@@ -177,10 +173,10 @@ const Guest = () => {
                                 ))}
                             </select>
                         </div>
-                        <div className="col-span-3">
+                        <div className="col-12 mt-2">
                             <h3>Address <span className="text-danger">*</span></h3>
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-md-4 col-12 mt-2">
                             <label className="block text-lg font-medium text-black">Country</label>
                             <select
                                 value={selectedCountry?.code || ""}
@@ -198,7 +194,7 @@ const Guest = () => {
                                 ))}
                             </select>
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-md-4 col-12 mt-2">
                             <label className="block text-lg font-medium text-black">State</label>
                             <StateSelect
                                 countryid={101}
@@ -209,7 +205,7 @@ const Guest = () => {
                                 placeHolder="Select State"
                             />
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-md-4 col-12 mt-2">
                             <label className="block text-lg font-medium text-black">City</label>
                             <CitySelect
                                 countryid={101}
@@ -220,7 +216,7 @@ const Guest = () => {
                                 placeHolder="Select City"
                             />
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-md-4 col-12 mt-2">
                             <label className="block text-lg font-medium text-black">Pincode</label>
                             <input
                                 type="text"
@@ -231,7 +227,7 @@ const Guest = () => {
                                 required
                             />
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-md-4 col-12 mt-2">
                             <label className="block text-lg font-medium text-black">
                                 Address 1
                             </label>
@@ -244,7 +240,7 @@ const Guest = () => {
                                 required
                             />
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-md-4 col-12 mt-2">
                             <label className="block text-lg font-medium text-black">
                                 Address 2
                             </label>
@@ -257,7 +253,7 @@ const Guest = () => {
                                 required
                             />
                         </div>
-                        <div className="col-span-3">
+                        <div className="col-12 mt-3">
                             <button
                                 type="submit"
                                 className="bg-blue-600 text-white py-2 px-4 rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
