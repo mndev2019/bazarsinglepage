@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Syne:wght@400..800&display=swap');
+
+body {
+  font-family: "Cinzel Decorative", serif;
+}
+
 .button-icon {
   display: flex;
   border: 3px #fff solid;
   width: fit-content;
   height: fit-content;
   cursor: pointer;
-  flex-direction: column; /* Stack icon and text on smaller screens */
+  flex-direction: column;
+  /* Stack icon and text on smaller screens */
   align-items: center;
   justify-content: center;
   padding: 10px;
@@ -14,7 +21,8 @@
 .icon {
   background-color: #fff;
   padding: 8px;
-  border-radius: 50%; /* Makes the icon more visually appealing */
+  border-radius: 50%;
+  /* Makes the icon more visually appealing */
 }
 
 .icon svg {
@@ -27,7 +35,8 @@
   transform-style: preserve-3d;
   width: 150px;
   height: 25px;
-  margin-top: 8px; /* Space between icon and cube */
+  margin-top: 8px;
+  /* Space between icon and cube */
 }
 
 .button-icon:hover {
@@ -41,7 +50,8 @@
 .side {
   position: absolute;
   height: 40px;
-  width: 100%; /* Ensures responsiveness */
+  width: 100%;
+  /* Ensures responsiveness */
   display: flex;
   font-size: 0.9em;
   justify-content: center;
@@ -66,7 +76,8 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .button-icon {
-    flex-direction: row; /* Horizontal layout for medium screens */
+    flex-direction: row;
+    /* Horizontal layout for medium screens */
     padding: 5px;
   }
 
@@ -92,7 +103,8 @@
 
 @media (max-width: 480px) {
   .button-icon {
-    flex-direction: column; /* Stack icon and cube vertically for smaller screens */
+    flex-direction: column;
+    /* Stack icon and cube vertically for smaller screens */
     padding: 5px;
   }
 
@@ -113,56 +125,69 @@
 }
 
 
-.stdropdown-input.stsearch-box input{
+.stdropdown-input.stsearch-box input {
   border: 0 !important;
 }
 
-.stdropdown-input.stsearch-box input:focus-visible{
-  border: 0  !important;
+.stdropdown-input.stsearch-box input:focus-visible {
+  border: 0 !important;
   outline: none;
 }
 
-.stdropdown-input.stsearch-box:hover{
+.stdropdown-input.stsearch-box:hover {
   border: 1px solid #0367be !important;
-  outline: none !important; 
+  outline: none !important;
 }
 
 input:hover,
-select:hover{
+select:hover {
   border: 1px solid #0367be !important;
   border-radius: 6px !important;
 }
 
 input,
-select{
- border-radius: 6px !important;
+select {
+  border-radius: 6px !important;
 }
 
 
 .btn-close {
-  background-color: white; /* Set the background color to white */
+  background-color: white;
+  /* Set the background color to white */
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
-  background-repeat: no-repeat; /* Prevent repeating of the icon */
-  background-position: center; /* Center the icon */
-  background-size: 1rem; /* Adjust the size of the icon */
-  border: none; /* Remove default border */
-  border-radius: 50%; /* Make it a circle button */
-  width: 2rem; /* Set button size */
-  height: 2rem; /* Set button size */
+  background-repeat: no-repeat;
+  /* Prevent repeating of the icon */
+  background-position: center;
+  /* Center the icon */
+  background-size: 1rem;
+  /* Adjust the size of the icon */
+  border: none;
+  /* Remove default border */
+  border-radius: 50%;
+  /* Make it a circle button */
+  width: 2rem;
+  /* Set button size */
+  height: 2rem;
+  /* Set button size */
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer; /* Pointer cursor for button */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  cursor: pointer;
+  /* Pointer cursor for button */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  /* Add subtle shadow */
 }
 
 .btn-close:hover {
-  background-color: #f0f0f0; /* Slightly darker background on hover */
+  background-color: #f0f0f0;
+  /* Slightly darker background on hover */
 }
 
 .btn-close:focus {
-  outline: none; /* Remove focus outline */
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Add focus shadow */
+  outline: none;
+  /* Remove focus outline */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  /* Add focus shadow */
 }
 
 
