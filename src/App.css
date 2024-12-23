@@ -342,3 +342,9 @@ body {
     transform: translateX(100%);
   }
 }
+.stdropdown-menu{
+  color: black;
+}
+.stdropdown-input {
+  color: black;
+}

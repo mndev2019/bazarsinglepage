@@ -30,7 +30,7 @@ const Home = () => {
                         <div className="flex justify-center">
                             <img src={imagelgo} className='w-[250px]' alt="" />
                         </div>
-                        <h1 className='text-center text-bold lg:text-5xl text-3xl text-white mb-10' style={{ fontFamily: '"Cinzel Decorative", serif',fontStyle:"italic" }}> Welcome to Happening Bazar</h1>
+                        <h1 className='text-center text-bold lg:text-5xl text-3xl text-white mb-10 mt-4' style={{ fontFamily: '"Cinzel Decorative", serif',fontStyle:"italic" }}> Welcome to Happening Bazar</h1>
 
                     </div>
                 </div>

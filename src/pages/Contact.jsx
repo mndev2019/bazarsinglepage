@@ -112,7 +112,7 @@ const Contact = () => {
         <form className="space-y-6" onSubmit={handleSubmit} autoComplete="off">
         <div className="row">
             <div className="col-md-4 col-12 mt-2">
-              <label className="block text-lg font-medium text-black">
+              <label className="block text-lg font-medium text-black text-start">
                 Name <span className="text-danger">*</span>
               </label>
               <input
@@ -121,12 +121,12 @@ const Contact = () => {
 
                 onChange={(e) => setFirstName(e.target.value)}
                 placeholder="Enter your first name"
-                className="mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                className="text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
                 required
               />
             </div>
             <div className="col-md-4 col-12 mt-2">
-              <label className="block text-lg font-medium text-black">
+              <label className="block text-lg font-medium text-black text-start">
                 Last Name <span className="text-danger">*</span>
               </label>
               <input
@@ -134,12 +134,12 @@ const Contact = () => {
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
                 placeholder="Enter your last name"
-                className="mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                className="text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
                 required
               />
             </div>
             <div className="col-md-4 col-12 mt-2">
-              <label className="block text-lg font-medium text-black">
+              <label className="block text-lg font-medium text-black text-start">
                 Company Name  <span className="text-danger">*</span>
               </label>
               <input
@@ -147,23 +147,23 @@ const Contact = () => {
                 value={companyname}
                 onChange={(e) => setcompanyname(e.target.value)}
                 placeholder="Enter your last name"
-                className="mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                className="text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
                 required
               />
             </div>
             <div className="col-md-4 col-12 mt-2">
-              <label className="block text-lg font-medium text-black">Email <span className="text-danger">*</span></label>
+              <label className="block text-lg font-medium text-black text-start">Email <span className="text-danger">*</span></label>
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                className="text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
                 required
               />
             </div>
             <div className="col-md-4 col-12 mt-2">
-              <label className="block text-lg font-medium text-black">Phone <span className="text-danger">*</span></label>
+              <label className="block text-lg font-medium text-black text-start">Phone <span className="text-danger">*</span></label>
               <input
                 type="tel"
                 value={phone}
@@ -173,29 +173,29 @@ const Contact = () => {
                 max={10}
                 maxLength={10}
                 placeholder="Enter your contact number"
-                className="mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                className="text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
                 required
               />
             </div>
             <div className="col-md-4 col-12 mt-2">
-              <label className="block text-lg font-medium text-black">GST Number <span className="text-danger">*</span></label>
+              <label className="block text-lg font-medium text-black text-start">GST Number <span className="text-danger">*</span></label>
               <input
                 type="text"
                 value={gst_no}
                 onChange={(e) => setgst_no(e.target.value)}
                 placeholder="Enter your contact number"
-                className="mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                className="text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
                 required
               />
             </div>
             <div className="col-md-4 col-12 mt-2">
-              <label className="block text-lg font-medium text-black">
+              <label className="block text-lg font-medium text-black text-start">
                 Business Category <span className="text-danger">*</span>
               </label>
               <select
                 value={preferredCategory}
                 onChange={(e) => setPreferredCategory(e.target.value)}
-                className="mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                className="text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
                 required
               >
                 <option value="" disabled>
@@ -209,15 +209,15 @@ const Contact = () => {
               </select>
             </div>
             <div className="col-12 mt-2">
-              <h3>Address <span className="text-danger">*</span></h3>
+              <h3 className="text-start text-black">Address <span className="text-danger">*</span></h3>
             </div>
             <div className="col-md-4 col-12 mt-2">
-              <label className="block text-lg font-medium text-black">Country </label>
+              <label className="block text-lg font-medium text-black text-start">Country </label>
               <select
                 value={selectedCountry?.code || ""}
                 onChange={handleChange}
 
-                className="mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                className="text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
               >
                 <option value="" disabled>
                   Select Country
@@ -230,7 +230,7 @@ const Contact = () => {
               </select>
             </div>
             <div className="col-md-4 col-12 mt-2">
-              <label className="block text-lg font-medium text-black">State</label>
+              <label className="block text-lg font-medium text-black text-start">State</label>
               <StateSelect
                 countryid={101}
                 value={state}
@@ -241,7 +241,7 @@ const Contact = () => {
               />
             </div>
             <div className="col-md-4 col-12 mt-2">
-              <label className="block text-lg font-medium text-black">City</label>
+              <label className="block text-lg font-medium text-black text-start">City</label>
               <CitySelect
                 countryid={101}
                 stateid={state?.id}
@@ -252,18 +252,18 @@ const Contact = () => {
               />
             </div>
             <div className="col-md-4 col-12 mt-2">
-              <label className="block text-lg font-medium text-black">Pincode</label>
+              <label className="block text-lg font-medium text-black text-start">Pincode</label>
               <input
                 type="text"
                 value={pincode}
                 onChange={(e) => setPincode(e.target.value)}
                 placeholder="Enter your Pincode"
-                className="mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                className="text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
                 required
               />
             </div>
             <div className="col-md-4 col-12 mt-2">
-              <label className="block text-lg font-medium text-black">
+              <label className="block text-lg font-medium text-black text-start">
                 Address 1
               </label>
               <input
@@ -271,12 +271,12 @@ const Contact = () => {
                 value={address1}
                 onChange={(e) => setAddress1(e.target.value)}
                 placeholder="Enter your address 1"
-                className="mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                className="text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
                 required
               />
             </div>
             <div className="col-md-4 col-12 mt-2">
-              <label className="block text-lg font-medium text-black">
+              <label className="block text-lg font-medium text-black text-start">
                 Address 2
               </label>
               <input
@@ -284,9 +284,9 @@ const Contact = () => {
                 value={address2}
                 onChange={(e) => setAddress2(e.target.value)}
                 placeholder="Enter your address 2"
-                className="mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                className="text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
                 required
-              />
+              /> 
             </div>
             <div className="col-12 mt-3">
               <button
