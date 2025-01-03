@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 
 import { countries } from "countries-list";
-import {  useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import { BaseUrl } from "../BaseUrl";
 import axios from "axios";
 import { CitySelect, StateSelect } from "react-country-state-city";
 
 const Contact = () => {
-  
-  
+
+
 
 
     const [state, setState] = useState("");
@@ -100,12 +100,10 @@ const Contact = () => {
             style={{
                 backgroundImage:
                     "url('https://t3.ftcdn.net/jpg/09/47/24/02/360_F_947240266_vILwmKGTvRMeF5qUI3JdmafagYMSBj69.jpg')",
-                   
+
             }}
         >
-            <div className="w-full max-w-[82rem] bg-white rounded-3xl shadow-lg p-8 overflow-auto"  style={{
-          maxHeight: "calc(100vh - 40px)", 
-        }}>
+            <div className="w-full max-w-[82rem] bg-white rounded-3xl shadow-lg p-8 overflow-auto"  >
                 <h2 className="text-3xl font-bold text-center text-black mb-4 myFont">
                     Contact Us As Host
                 </h2>

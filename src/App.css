@@ -9,8 +9,8 @@
 
 
 body {
-  font-family: 'myFont', serif !important; 
- 
+  font-family: 'myFont', serif !important;
+
 }
 
 @font-face {
@@ -203,11 +203,11 @@ select {
 }
 
 
-/*countdown */
+/* countdown */
 
-body {
+/* body {
   overflow: hidden;
-}
+} */
 
 
 #root {
@@ -365,12 +365,14 @@ body {
 
 /* muskan */
 
-.circle{
+.circle {
   border: 3px solid white;
 }
-.circle2{
+
+.circle2 {
   border: 3px solid white;
 }
+
 .circle::before {
   content: "";
   position: absolute;
