@@ -119,7 +119,7 @@ const Contact = () => {
 
                                 onChange={(e) => setFirstName(e.target.value)}
                                 placeholder="Enter your first name"
-                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-[#ec3237] sm:text-sm"
                                 required
                             />
                         </div>
@@ -132,7 +132,7 @@ const Contact = () => {
                                 value={lastName}
                                 onChange={(e) => setLastName(e.target.value)}
                                 placeholder="Enter your last name"
-                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-[#ec3237] sm:text-sm"
                                 required
                             />
                         </div>
@@ -145,7 +145,7 @@ const Contact = () => {
                                 value={companyname}
                                 onChange={(e) => setcompanyname(e.target.value)}
                                 placeholder="Enter your last name"
-                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-[#ec3237] sm:text-sm"
                                 required
                             />
                         </div>
@@ -156,7 +156,7 @@ const Contact = () => {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder="Enter your email"
-                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-[#ec3237] sm:text-sm"
                                 required
                             />
                         </div>
@@ -171,7 +171,7 @@ const Contact = () => {
                                 max={10}
                                 maxLength={10}
                                 placeholder="Enter your contact number"
-                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-[#ec3237] sm:text-sm"
                                 required
                             />
                         </div>
@@ -182,7 +182,7 @@ const Contact = () => {
                                 value={gst_no}
                                 onChange={(e) => setgst_no(e.target.value)}
                                 placeholder="Enter your contact number"
-                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-[#ec3237] sm:text-sm"
                                 required
                             />
                         </div>
@@ -193,7 +193,7 @@ const Contact = () => {
                             <select
                                 value={preferredCategory}
                                 onChange={(e) => setPreferredCategory(e.target.value)}
-                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-[#ec3237] sm:text-sm"
                                 required
                             >
                                 <option value="" disabled>
@@ -215,7 +215,7 @@ const Contact = () => {
                                 value={selectedCountry?.code || ""}
                                 onChange={handleChange}
 
-                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-[#ec3237] sm:text-sm"
                             >
                                 <option value="" disabled>
                                     Select Country
@@ -257,7 +257,7 @@ const Contact = () => {
                                 value={pincode}
                                 onChange={(e) => setPincode(e.target.value)}
                                 placeholder="Enter your Pincode"
-                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-[#ec3237] sm:text-sm"
                                 required
                             />
                         </div>
@@ -270,7 +270,7 @@ const Contact = () => {
                                 value={address1}
                                 onChange={(e) => setAddress1(e.target.value)}
                                 placeholder="Enter your address 1"
-                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-[#ec3237] sm:text-sm"
                                 required
                             />
                         </div>
@@ -283,14 +283,14 @@ const Contact = () => {
                                 value={address2}
                                 onChange={(e) => setAddress2(e.target.value)}
                                 placeholder="Enter your address 2"
-                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                                className="myFont text-black mt-1 block w-full px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-[#ec3237] sm:text-sm"
                                 required
                             />
                         </div>
                         <div className="col-12 mt-3">
                             <button
                                 type="submit"
-                                className="myFont bg-blue-600 text-white py-2 px-4 rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                                className="myFont w-full bg-[#ec3237] text-white py-2 px-4 rounded-md shadow-md hover:bg-[#ec3237] focus:outline-none focus:ring-2 focus:ring-[#ec3237] focus:ring-offset-2"
                             >
                                 Submit
                             </button>
@@ -299,7 +299,7 @@ const Contact = () => {
                 </form>
             </div>
             <Modal show={showModal} onHide={handleClose}>
-                <Modal.Header closeButton className="bg-[#0367be] text-white myFont">
+                <Modal.Header closeButton className="bg-[#ec3237] text-white myFont">
                     <Modal.Title>Submission Received</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="text-center myFont">
