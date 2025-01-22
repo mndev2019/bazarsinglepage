@@ -22,7 +22,7 @@ export default function FlashScreen() {
     //   }
     // };
     const handlehost = () => {
-       
+
         navigate("/host");
 
     };
@@ -49,7 +49,7 @@ export default function FlashScreen() {
                         Host
                     </p>
                 </div>
-                <div className="circle2 h-[100px] w-[100px] bg-[#ec3237] z-[12] rounded-full absolute border-3 border-white flex justify-center items-center right-[100px]" onClick={()=> navigate('/guest')}>
+                <div className="circle2 h-[100px] w-[100px] bg-[#ec3237] z-[12] rounded-full absolute border-3 border-white flex justify-center items-center right-[100px]" onClick={() => navigate('/guest')}>
                     <p className="text-white text-xl font-bold mb-0 myFont">
                         Guest
                     </p>
@@ -57,7 +57,7 @@ export default function FlashScreen() {
 
                 <div className="bg-white z-10 px-2 py-[80px]">
                     {/* <img src={LogoMain} alt="logo" className="md:h-24  absolute left-1/2 -translate-x-1/2 z-10 px-3 top-[40px]" /> */}
-                    <img src={LogoMain} alt="logo" className="w-[400px] mx-auto" />
+                    <img src={LogoMain} alt="logo" className="w-[80px] mx-auto" />
 
                     <Countdown />
                     <p className="lg:text-7xl sm:text-6xl min-[440px]:text-5xl text-4xl  z-10 text-[#f89e32] px-3 myFont font-bold red-shadow py-3" style={{ animation: "fadeInUpLimit 0.8s ease-out" }}>
