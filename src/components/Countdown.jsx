@@ -10,7 +10,7 @@ function Countdown() {
 
   return (
     <div
-      className="flex min-[440px]:gap-5 gap-3 items-center mt-10 lg:text-xs text-xs font-medium z-10 justify-center py-4"
+      className="flex min-[440px]:gap-5 gap-3 items-center  lg:text-xs text-xs font-medium z-10 justify-center py-4"
       style={{ textShadow: "0em 0.0375em 0.28125em rgba(0, 0, 0, 0.600000)", animation: "fadeInUpFull 0.5s ease-out" }}
     >
       <div>
