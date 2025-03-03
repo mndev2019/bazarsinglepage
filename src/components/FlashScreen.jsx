@@ -57,11 +57,11 @@ export default function FlashScreen() {
 
                 <div className="bg-white z-10 px-2 py-[80px] w-[40%]">
                     {/* <img src={LogoMain} alt="logo" className="md:h-24  absolute left-1/2 -translate-x-1/2 z-10 px-3 top-[40px]" /> */}
-                    <img src={LogoMain} alt="logo" className="w-[140px] mx-auto" />
+                    <img src={LogoMain} alt="logo" className="w-[80px] mx-auto" />
 
-                    {/* <Countdown /> */}
+                    <Countdown />
                     <p className="lg:text-7xl sm:text-6xl min-[440px]:text-5xl text-4xl  z-10 text-[#f89e32] px-3 myFont font-bold red-shadow py-3" style={{ animation: "fadeInUpLimit 0.8s ease-out" }}>
-                        Coming <span className="block text-[#ec3237] myFont font-bold yellow-shadow ">
+                        LAUNCHING <span className="block text-[#ec3237] myFont font-bold yellow-shadow ">
                             SOON!
                         </span>
                     </p>
