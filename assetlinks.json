@@ -1,0 +1,23 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.happeningbazaar",
+            "sha256_cert_fingerprints": [
+                "30:4C:C4:14:D3:DF:03:B2:E4:1C:E3:48:03:11:DB:B5:7F:76:38:81:2A:52:80:CD:33:C3:CC:92:57:8A:0B:C2"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "web",
+            "site": "https://happeningbazaar.com/appredirect"
+        }
+    }
+]

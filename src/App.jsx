@@ -4,6 +4,7 @@ import Contact from './Pages/Contact'
 import FlashScreen from './components/FlashScreen'
 import Guest from './Pages/Guest'
 import "react-country-state-city/dist/react-country-state-city.css";
+import AppRedirect from './AppRedirect'
 function App() {
 
 
@@ -11,9 +12,12 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<FlashScreen/>}/>
+          <Route path="/" element={<FlashScreen />} />
           <Route path='/host' element={<Contact />} />
-          <Route path='/guest' element={<Guest/>}/>
+          <Route path='/guest' element={<Guest />} />
+          <Route path='/appredirect' element={<AppRedirect />} />
+
+
         </Routes>
       </BrowserRouter>
     </>
