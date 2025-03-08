@@ -7,7 +7,10 @@
             "namespace": "android_app",
             "package_name": "com.happeningbazaar",
             "sha256_cert_fingerprints": [
-                "30:4C:C4:14:D3:DF:03:B2:E4:1C:E3:48:03:11:DB:B5:7F:76:38:81:2A:52:80:CD:33:C3:CC:92:57:8A:0B:C2"
+                "CD:1F:A4:A1:4B:06:23:56:39:CF:8F:CF:49:5E:7E:F8:52:27:EE:5D:F0:2D:DA:67:91:21:03:7E:BD:67:4C:1F",
+                "30:4C:C4:14:D3:DF:03:B2:E4:1C:E3:48:03:11:DB:B5:7F:76:38:81:2A:52:80:CD:33:C3:CC:92:57:8A:0B:C2",
+                "AE:90:59:91:39:B4:13:0E:A8:84:B2:4A:DA:25:32:D4:A5:B6:41:ED:30:08:9F:C1:4D:E6:D2:C3:02:D4:63:D2",
+                "74:A6:E5:0A:A4:AC:15:75:7A:73:E7:A3:79:C0:50:DE:35:34:B4:D3:3B:87:DC:4B:4B:E9:66:AB:6E:86:D2:26"
             ]
         }
     },

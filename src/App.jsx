@@ -5,6 +5,7 @@ import FlashScreen from './components/FlashScreen'
 import Guest from './Pages/Guest'
 import "react-country-state-city/dist/react-country-state-city.css";
 import AppRedirect from './AppRedirect'
+import Community from './Community'
 function App() {
 
 
@@ -16,6 +17,8 @@ function App() {
           <Route path='/host' element={<Contact />} />
           <Route path='/guest' element={<Guest />} />
           <Route path='/appredirect' element={<AppRedirect />} />
+          <Route path='/community/:id' element={<Community />} />
+
 
 
         </Routes>

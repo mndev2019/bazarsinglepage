@@ -9,7 +9,7 @@ function AppRedirect() {
 
         const timeout = setTimeout(() => {
             window.location.replace(playStoreLink);
-        }, 3000); // Redirect to Play Store after 3 sec if the app is not installed
+        }, 1000);
 
         return () => clearTimeout(timeout);
     }, []);
